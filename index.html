@@ -4,39 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./Index.css">
 </head>
 <body>
     <h1>Table of Contents</h1>
     <table>
-        <tr>
+        <!-- But keeping styling like this is not best practise code should be as much less as possible. here we gave both id and class same background styling with different color
+        so its not the correct process ..either give styling to class or give to id if giving same attribute like (background-color) means repetition is not correct. smae code should not be repeated -->
+
+        <tr class="col col2" id="th">              <!--class name is used to use in css and it uses to seperate color-->
             <th>S.No</th>
             <th>Name</th>
             <th>Link</th>
         </tr>
-        <tr>
+        <tr class="col">                           <!--class name is  col-->
             <td>1</td>
             <td>simple</td>
             <td><button><a href="./Simple.html">click</a></button></td>
         </tr>
-        <tr>
+        <tr class="col">                           <!--class name is col-->
             <td>2</td>
             <td>w3c</td>
             <td><button><a href="./w3c.html">click</a></button></td>
         </tr>
-        <tr>
-            <td>3</td>
+        <tr >
+            <td>3</td>                             <!-- here class name is not given so that it takes to be row span -->
             <td>Resume</td>
             <td><button><a href="./Resume.html">click</a></button></td>
         </tr>
-        <tr>
+        <tr class="col">                           <!--class name is col-->
             <td>4</td>
             <td>Forms</td>
             <td><button><a href="./Forms.html">click</a></button></td>
         </tr>
-        <tr>
+        <tr class="col">                           <!--class name is col-->
             <td>5</td>
             <td>Everything</td>
-            <td><button><a href="./Everything.html">click</a></button></td>
+            <td><button><a href="./Everything.html">click   </a></button></td>
         </tr>
     </table>
 </body>
