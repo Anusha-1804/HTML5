@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete Data(practice) of HTML</title>
+</head>
+<body>
+    <!--Headings and paragraph-->
+    <h1>Hello Anusha</h1>
+    <h2>Heloo Anusha</h2>
+    <h3>Hello Anusha</h3>
+    <h4>Hello Anusha</h4>
+    <h5>Heloo Anusha</h5>
+    <!--This title tag is called as tooltip.title is used to get a name in website when hovered mouse over it-->
+    <h6>title="Happy">Gjjela Anusha</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam blanditiis debitis ex voluptates, cupiditate omnis maiores, iure consequatur quibusdam iste aut? Exercitationem eius aspernatur voluptates, aliquid culpa quos veritatis tempore reiciendis eaque obcaecati quam officia harum nulla praesentium ab, expedita rem adipisci animi porro laboriosam nemo sed? Dolores, optio.</p>
+    <!--All headings differ by font-size and bold, everything heading comes in new line as heading elements are block element-->  
+    <!--Anchor and Image--> 
+    <a href="https://www.amazon.in/" target="_blank">Open Amazon</a><br> <!--linkwith amazon-->
+    <a href="mailto:123@gmail.com" target="_blank">Mail Us</a><br>       <!--email address-->
+    <a href="tel: 123456789" target="_blank">Call Us</a><br>             <!--tell number-->
+    <a href="" target="_blank">To Download</a><br>                       <!--Download option-->
+    <br>
+    <h3> Basic Form</h3>
+    Name : <input type ="text"><br>                                      <!--name box-->
+    Father's Name: <select name id disabled>                             <!-- it is a Disabled name with input text-->
+                    <option>Mr.</option>
+                   </select> 
+                   <input type="text"><br>  
+    Village: <input type="text" placeholder="villege & district"><br>    <!-- Placeholder-->
+    Gender: <select name id>                                             <!-- Select option-->
+                 <option value>--select--</option>
+                 <option value>Yes</option>
+                 <option value>No</option>
+            </select><br>
+    Care of: <input type="radio" name="care" id="care">                  <!--Radio option -->        
+                  <label for="par">Parent</label>
+             <input type="radio" name="care" id="care">
+                  <label for="gua">Guardian</label><br>
+    Payment Details: <input type="checkbox" name="check" id="c">         <!--checkbox-->
+                   <label for="che">Check</label>
+                   <input type="checkbox" name="cas" id="c">
+                   <label for="cas">Cash</label><br>
+    <center>
+        <input type="Reset" value="reset">                               <!--Reset Button-->
+        <input type="Submit" value="submit">                             <!--Submit Button-->
+      <button type="back"">Back</button><br>                             <!--Back Button-->
+    </center>
+
+    <!--early there used to have concept called frames in that we used to div element 
+    if that we give
+    target="_parent" then the page opens in the next frame above it
+    _child the page opens in s
+    _top opens i the first frame above all(eg: if there five frames)
+    _self opens in same page
+    _blank then it opens in new tab(we mostly use _blank)-->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_49_7UU2Jh5-Y-VBu0W7x1Teln3JTGXcF74jNEdLf5iVSj8wvpMcsUoa9mCTn9882kBo&usqp=CAU"alt="Alternate" height="20%" width="20%">
+    <!-- always we must use vertical scrolling only .. people don't like horizontal scrolling-->
+    <!--a and img are inline elements-->
+
+    <p><h2>Advanced Topics From HTML5</h2></p>
+
+    <!--To show different images in mobile and web at same time we use picture tag-->
+    <picture>
+        <source media="(min-width: 480px)" srcset="">
+        <source media="(min-width: 670px)" srcset="">
+        <img width="30%" src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg">
+    </picture>
+    <br>
+    <h3>Inserting an Video</h3>
+    <video controls autoplay muted height="40%" width="40%" >
+    <source src="sample-mp4-file-small.mp4">
+    </video>
+    <br>
+    <!--In above autoplay helps to play the video automatically when the window is opened in browser sometimes in chrome will not play 
+        because if there is some disturbiong sound...so for that we have to keep MUTED...It will mute the audio-->
+    <h3>Inserting an Audio</h3>
+    <audio controls>
+        <source src="c:\Users\anush\Downloads\Flute Ringtone. m4a.m4a">
+    </audio>
+    <br>                             
+     <!--In Audio also select link in youtube and paste in goggle just click download ,then open the folders again here copy the click and paste here -->
+     <br>
+    <!--To copy youtube links we have to copy embeded links-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xguX3VLi28g?si=gW6NS-Jxvo96Yk-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br>
+    <!--Go to youtube or anyother website click on share and copy the embedd link you will get all the below line and paste it in your site-->
+    <!--Make a site using youtube api as an assignment-->
+    <!--We can use embed also in place of iframe but now we are using iframe-->
+    <br>
+    <h3><P>Lists</P></h3>            <!--create lists-->
+    <ol>
+        <li>C Language</li>          <!--Order lists-->
+        <li>C++ Language</li>
+        <li>Data Structure</li>
+    </ol>
+    <ul>
+        <li>DBMS</li>
+        <li>HTML</li>                <!--Unorder lists-->
+        <li>Js</li>
+    </ul>
+    <h3><p>Tables</p></h3>           <!--Table creation-->
+    <Table>
+        <tr>                         <!--TR. Table Row-->
+            <th>S.No</th>
+            <th>Name</th>            <!--TH. Table Head-->
+            <th>Mobile</th>
+        </tr>
+        <tr>
+            <td>1</td>               <!--TD. Table Data-->
+            <td>Anusha</td>
+            <td>92****8</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ajay</td>
+            <td>76****02</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Anujay</td>
+            <td>54****62</td>
+        </tr>
+    </Table>
+    <!--For this check in MDN main documentation of HTML-->
+    <P>Other elements which are regularly used are: MARQUEE</P>
+    <marquee behavior ="slope" direction="down">Happy</marquee><br>                  <!--Down Marquee : means moves to down-->
+    <marquee behavior ="slope" direction="up">Happy</marquee><br>                    <!--Up Marquee : means moves to up-->
+    <marquee behavior ="slope" direction="right">Happy</marquee><br>                 <!--Right Marquee : means moves to right-->
+    <marquee behavior ="slope" direction="left">Happy</marquee><br>                  <!--Left Marquee : means moves to left-->
+    <!--Formatting Tags-->
+    <h3>Formatting Tags</h3>
+    H<sub>2</sub>0<br>                                     <!--Subscript-->
+    X<sup>2</sup><br>                                      <!--Superscript-->
+    <em>Ajay</em><br>                                      <!--Italic-->
+    <strong>Sushanth</strong><br>                          <!--Bold-->
+    <u>Akshay</u><br>                                      <!--Underline-->
+    <b>Mani kanta</b><br>                                  <!--Bold-->
+    <del>My Brothers</del><br>                             <!--Del is used instead of strike-->
+    </body>
+</html>
