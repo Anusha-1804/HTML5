@@ -1,0 +1,62 @@
+ /* Basic selectors */
+ /*There are so many colors each colors are represented with code numbers
+ each color will have their have own hexadecimal code.
+ Every RBG color lies between 
+ red lies between: 0-200
+ green lies between: 0-200
+ blue lies between: 0-200
+ alpha lies between: 0.0-1.0
+ with same color but if we want to make it light then we use alpha
+ (rgba)*/
+ body
+       {
+           /*background-color: rgba(192, 52, 32, 0.5);*/
+             background-image: url('https://c1.wallpaperflare.com/preview/839/507/616/beach-female-girl-light.jpg');
+             background-repeat: no-repeat;       /* if we have repeat then repeat-x is horizontal,,repeat-y is vertical is repeated*/
+             background-size: cover;             /* if cover use total screen shows, if fit-content use small sixe screen */
+             box-sizing: border-box;             /* box model and border size*/
+             background-position: stretch;
+       }
+        h1
+        {
+            background-color: rgb(30, 198, 210);
+             color:rgb(237, 225, 100);                      /*Title background color*/
+             text-align: center;
+        }
+        /*border for table , if we have to give same property for two elements we can give them by seperating with, like belowe */
+        table,tr
+        {
+            margin: 50px;                       /*margin uses the border lines */
+            border-color: rgb(230, 72, 198);               /* border color*/
+            border-width: 2px;                  /*boder width 2px,3px,4px,5px,.....*/
+            border-style: groove;                /*border style use Dotted,Double,Dash,Wavy,ridge...*/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+            padding: 50px;                      /* padding is space between border to data*/
+        }
+        /*if given for tr it will be applicable to all tags...so we will go with class names*/
+        tr
+        {
+            margin: 20px;                        
+        }
+        table{
+            border-width: 10px;
+        }
+        tr{
+            border-width: 2px;
+        }
+        .col                                              /* selecting by class name*/
+        {
+            background-color: lightgrey;
+        }
+        #th                                               /*selecting by id name*/
+        {
+           background-color: rgb(255, 80, 92);
+        }
+        button {
+        display: auto;
+        background-color: greenyellow;
+        }
+        a:-webkit-any-link{
+            cursor: pointer;
+            text-decoration: none;
+            color: rbg(11, 14, 15);
+        }
