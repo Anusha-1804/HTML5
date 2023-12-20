@@ -11,11 +11,11 @@
  body
        {
            /*background-color: rgba(192, 52, 32, 0.5);*/
-             background-image: url('https://c1.wallpaperflare.com/preview/839/507/616/beach-female-girl-light.jpg');
+             background-image: url('https://img.freepik.com/premium-photo/silhouette-woman-photographer-hat-with-dslr-camera-during-taking-pictures-sea-sunset_122732-2206.jpg');
              background-repeat: no-repeat;       /* if we have repeat then repeat-x is horizontal,,repeat-y is vertical is repeated*/
              background-size: cover;             /* if cover use total screen shows, if fit-content use small sixe screen */
              box-sizing: border-box;             /* box model and border size*/
-             background-position: stretch;
+             background-position : stretch;
        }
         h1
         {
