@@ -72,7 +72,7 @@ blockquote {
 }
 .music-list {
     padding-top: 50px;
-  }
+}
  .sub-head-title {
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
@@ -81,14 +81,18 @@ blockquote {
     padding-top: 20px;
     padding-bottom: 10px;
  }
- footer{
+ .footer{
     margin: 50px 0;
- }
- footer p{
-    text-align: end;
- }
- .ref-links {
     text-align: left;
     font-family: sans-serif;
     color: rgb(43, 30, 75);
   }
+.class1{
+font-size: 15px;
+}
+.go-back{
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
