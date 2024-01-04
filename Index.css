@@ -11,49 +11,47 @@
  body
        {
            /*background-color: rgba(192, 52, 32, 0.5);*/
-             background-image: url('https://img.freepik.com/premium-photo/silhouette-woman-photographer-hat-with-dslr-camera-during-taking-pictures-sea-sunset_122732-2206.jpg');
+             background-image: url('https://img.freepik.com/premium-photo/teamwork-hands-unite-with-power-is-good-team-successful-people-team-work-concept_24883-2831.jpg');
              background-repeat: no-repeat;       /* if we have repeat then repeat-x is horizontal,,repeat-y is vertical is repeated*/
              background-size: cover;             /* if cover use total screen shows, if fit-content use small sixe screen */
-             box-sizing: border-box;             /* box model and border size*/
              background-position : stretch;
        }
         h1
         {
-            background-color: rgb(30, 198, 210);
-             color:rgb(237, 225, 100);                      /*Title background color*/
+            background-color: chocolate;
+             color:rgb(100, 198, 237);                      
              text-align: center;
         }
         /*border for table , if we have to give same property for two elements we can give them by seperating with, like belowe */
-        table,tr
+        th, td
         {
-            margin: 50px;                       /*margin uses the border lines */
-            border-color: rgb(230, 72, 198);               /* border color*/
-            border-width: 2px;                  /*boder width 2px,3px,4px,5px,.....*/
-            border-style: groove;                /*border style use Dotted,Double,Dash,Wavy,ridge...*/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-            padding: 50px;                      /* padding is space between border to data*/
-        }
-        /*if given for tr it will be applicable to all tags...so we will go with class names*/
-        tr
-        {
-            margin: 20px;                        
+            /*border: 2px solid brown;*/
+            /*we can give all in same line like above or we can give separately all like below*/
+             border-color: rgb(133, 178, 216);        
+             border-style: groove;                /*border style use Dotted,Double,Dash,Wavy,ridge...*/                 
+             
+             /*border: 2px;*/
         }
         table{
-            border-width: 10px;
+               width:50%;
+               border-color: red;
+               border-style: dotted;
+               border-width: 5px;
+               margin-left: 250px;
+               margin-top: 145px;
+               padding: 8px;
+               background-color: blanchedalmond;
         }
-        tr{
-            border-width: 2px;
-        }
-        .col                                              /* selecting by class name*/
+        /*My questions?
+          Why am I getting double colors in the border*/
+
+        #th                                               
         {
-            background-color: lightgrey;
-        }
-        #th                                               /*selecting by id name*/
-        {
-           background-color: rgb(255, 80, 92);
+           background-color: rgb(235, 253, 121);
         }
         button {
         display: auto;
-        background-color: greenyellow;
+        background-color: rgb(235, 253, 121);
         }
         a:-webkit-any-link{
             cursor: pointer;
