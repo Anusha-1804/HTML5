@@ -11,15 +11,15 @@
  body
        {
            /*background-color: rgba(192, 52, 32, 0.5);*/
-             background-image: url('https://img.freepik.com/premium-photo/teamwork-hands-unite-with-power-is-good-team-successful-people-team-work-concept_24883-2831.jpg');
+             background-image: url('https://www.shutterstock.com/image-photo/blurred-shadow-palm-leaves-on-260nw-2261327067.jpg');
              background-repeat: no-repeat;       /* if we have repeat then repeat-x is horizontal,,repeat-y is vertical is repeated*/
              background-size: cover;             /* if cover use total screen shows, if fit-content use small sixe screen */
              background-position : stretch;
        }
         h1
         {
-            background-color: chocolate;
-             color:rgb(100, 198, 237);                      
+            background-color: linen;
+             color:black;                      
              text-align: center;
         }
         /*border for table , if we have to give same property for two elements we can give them by seperating with, like belowe */
@@ -28,18 +28,19 @@
             /*border: 2px solid brown;*/
             /*we can give all in same line like above or we can give separately all like below*/
              border-color: rgb(133, 178, 216);        
-             border-style: groove;                /*border style use Dotted,Double,Dash,Wavy,ridge...*/                 
+             border-style: groove;   /*border style use Dotted,Double,Dash,Wavy,ridge...*/
+             padding:3px;                 
              
              /*border: 2px;*/
         }
         table{
                width:50%;
-               border-color: red;
-               border-style: dotted;
+               border-color: black;
+               border-style: ridge;
                border-width: 5px;
                margin-left: 250px;
                margin-top: 145px;
-               padding: 8px;
+               padding: 15px;
                background-color: blanchedalmond;
         }
         /*My questions?
@@ -47,11 +48,11 @@
 
         #th                                               
         {
-           background-color: rgb(235, 253, 121);
+           background-color: rgb(121, 183, 253);
         }
         button {
         display: auto;
-        background-color: rgb(235, 253, 121);
+        background-color: lightcyan;
         }
         a:-webkit-any-link{
             cursor: pointer;
