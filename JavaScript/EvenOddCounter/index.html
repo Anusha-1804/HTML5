@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EvenOddCounter</title>
+    <title>Counter Application</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="number">Shows Number Here:</div>
-        <div id="Counter">
-                <p>0</p>
-                <p></p>
-            <div class="btn">
-                <button onclick="incr()">+</button>
-                <button onclick="reset()">Reset</button>
-                <button onclick="decr()">-</button>
+    <div class="warp">
+         <div class="sub-warp">
+            <div class="p">
+                <p id="para">0</p>
             </div>
+            <div class="btn">
+                <button onclick="Add()">+</button>
+                <button onclick="reset()">Reset</button>
+                <button onclick="reduce()">-</button>
+            </div>
+            <div class="msg" id="message">Zero</div>
         </div>
-    <script src="script.js"></script>
+        </div>
+    <script src="./script.js"></script>
 </body>
 </html>

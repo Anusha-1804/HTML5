@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">4
+    <title>R & R Wedding Agency website | HTML,CSS,JavaScript,Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!----------header------------->
+
+    <header>
+               <a href="/" class="logo">Wedding</a>
+               <a href="#" class="menu" onclick="toggleMenu();">
+                    <i class="fa-solid fa-bars"></i></i>
+                </a>
+                    <ul class="nav">
+                        <li><a class="nav-btn active" href="/" onclick="resetHeader();"><i class="fa-solid fa-house"></i></a></li>
+                        <li><a class="nav-btn" href="#" data-target="about">About</a></li>
+                        <li><a class="nav-btn" href="#" data-target="services">Services</a></li>
+                        <li><a class="nav-btn" href="#" data-target="portfolio">Portfolio</a></li>
+                        <li><a class="nav-btn" href="#" data-target="contact">Contact</a></li>
+                    </ul>
+                    <div class="search">
+                         <input type="text" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+    </header>
+    <!----Mobile Navigation-->
+    <ul class="nav-mobile">
+        <li><a class="nav-btn active" href="/" onclick="resetHeader();"><i class="fa-solid fa-house"></i></a></li>
+        <li><a class="nav-btn" href="#" data-target="about">About</a></li>
+        <li><a class="nav-btn" href="#" data-target="services">Services</a></li>
+        <li><a class="nav-btn" href="#" data-target="portfolio">Portfolio</a></li>
+        <li><a class="nav-btn" href="#" data-target="contact">Contact</a></li>
+    </ul>
+    <!----------Banner------------>
+    <div class="banner container-fluid">
+        <div class="bg-slide slide-1 active">
+            <div class="content">
+                <h1>Wedding</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore dolores ipsa accusamus sequi explicabo maiores ipsum officiis, odit sapiente id, voluptas ullam quis non? Impedit necessitatibus laboriosam ut in, autem mollitia consectetur quisquam eum? Amet ex eius repellendus commodi non? Deserunt vitae incidunt odit voluptatibus, rem sunt soluta nesciunt!</p>
+            </div>
+            <div class="circle bg">
+                  <img src="https://img.weddingbazaar.com/shaadisaga_production/photos/pictures/000/785/280/original/design_by_peerapach.jpg?1553765509" alt="">
+                  <p> WEDDING INVITATION</p>
+               <div class="circle large">
+                    <img src="" alt="">
+                  <div class="circle small">
+                       <img src="" alt="">
+                  </div>
+               </div>
+           </div>
+        </div>
+        <div class="bg-slide slide-2">
+        <div class="content">
+            <h1>Ceromony</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore dolores ipsa accusamus sequi explicabo maiores ipsum officiis, odit sapiente id, voluptas ullam quis non? Impedit necessitatibus laboriosam ut in, autem mollitia consectetur quisquam eum? Amet ex eius repellendus commodi non? Deserunt vitae incidunt odit voluptatibus, rem sunt soluta nesciunt!</p>
+        </div>
+    <div class="circle bg">
+        <img src="./image 3" alt="">
+    <div class="circle large">
+        <img src="./image 3" alt="">
+    <div class="circle small">
+        <img src="./image 3" alt="">
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="bg-slide slide-3">
+        <div class="content">
+            <h1>sangith&haldhi</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore dolores ipsa accusamus sequi explicabo maiores ipsum officiis, odit sapiente id, voluptas ullam quis non? Impedit necessitatibus laboriosam ut in, autem mollitia consectetur quisquam eum? Amet ex eius repellendus commodi non? Deserunt vitae incidunt odit voluptatibus, rem sunt soluta nesciunt!</p>
+        </div>
+    <div class="circle bg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1X-AN3kFs-XAzQU5uTMgBv7IXiWaT-L7zeQ&usqp=CAU" alt="">
+    <div class="circle large">
+        <img src="" alt="">
+    <div class="circle small">
+        <img src="" alt="">
+    </div>
+    </div>
+    </div>
+    </div>
+        <ul class="slide-loader">
+            <li><a class="slide-btn active" data-target="slide-1">1</a></li>
+            <li><a class="slide-btn" data-target="slide-2">2</a></li>
+            <li><a class="slide-btn" data-target="slide-3">3</a></li>
+        </ul>
+        <div class="share">
+            <p>share</p>
+            <a href="#"><i class="fa-solid fa-share-nodes" style="color: #030507;"></i></a>
+        </div>
+        <div class="lead">
+             <svg viewBox="0 0 100 100" width="100" height="100">
+                <defs>
+                    <path 
+                    id="circle"
+                    d="
+                    M 50, 50
+                    m -37,0
+                    a 37,37 0 1,1 74,0
+                    a 37,37 0 1,1 -74,0"
+                    />
+                </defs>
+                <text font-size="17">
+                    <textpath xlink:href="#circle">
+                        Richa... Weds ...Ranjith Kumar   ❤️
+                    </textpath>
+                </text>
+             </svg>
+             <a href="#" class="move-down" onclick="initNavigation();"><i class="fa-solid fa-angle-down" style="color: #030303;"></i></a>
+        </div>
+    </div>
+    <!------**********Main Start***********------->
+    <main>
+        <!------About Section------>
+        <section id="about" class="about"> 
+
+            <div class="container">
+                <div class="row">
+                    <h1>About Us</h1>
+                </div>
+               <div class="row">
+                   <div class="col-lg-6">
+                       <div class="img-box">
+                            <img src="./3Engmntimage.jpg" alt="" class="img-fluid"/>
+                            <img src="./2EngImage.jpg" alt="" class="corner-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://www.livemint.com/lm-img/img/2023/10/17/1600x900/2-0-1299610864-iStock-866987662-0_1679591545723_1697561848815.jpg" alt="" class="section-bg-img">
+                        <h4>Baja's Wedding Invitation</h4>
+                        <p><strong>' Smt  Baja Yadamma & Shri Baja Devaiah '</strong><br>
+                        will be deeply honoured by your gracious presence to share with them the joy that fills their heart on splendid & 
+                        festive celebrations at the wedding ceremony of their only daughter <br>
+                        Chi. La. Sow.<strong><em> RICHA </em></strong><br>
+                                     with <br>
+                                    Chi. <strong><em>RANJITH KUMAR</em></strong>
+                    </p>
+                        <a href="#" class="section-btn">Discover more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------Services Section------>
+        <section id="services" class="services">
+            <div class="container">
+                <div class="row">
+                    <h1>Our Services</h1>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="card">
+                            <div class="img-box"> 
+                                <img src="https://happylagan.in/wp-content/uploads/2023/05/bab7578d18c1b4cf697719c040d31963-1.jpg" alt=""/>
+                            </div>              
+                            <div class="details">
+                                <h4>Haldhi Ceremony</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quos libero odit accusantium at maxime architecto facere, ipsam beatae fugiat praesentium animi, dolorem aut. Perferendis neque reiciendis consequuntur vel quaerat.</p>
+                                <a href="#" class="section-btn">Discover More</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="card">
+                            <div class="img-box">
+                                <img src="./2EngImage.jpg" alt=""/>
+                            </div>
+                            <div class="details">
+                                <h4>Wedding plan</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quos libero odit accusantium at maxime architecto facere, ipsam beatae fugiat praesentium animi, dolorem aut. Perferendis neque reiciendis consequuntur vel quaerat.</p>
+                                <a href="#" class="section-btn">Discover More</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <div class="card">
+                            <div class="img-box">
+                                <img src="https://i.pinimg.com/736x/d7/20/25/d7202544d7db09037636efeb554b506d.jpg" alt=""/>
+                                 <!---- src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="-->
+                            </div>
+                            <div class="details">
+                                <h4> Ceremony</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quos libero odit accusantium at maxime architecto facere, ipsam beatae fugiat praesentium animi, dolorem aut. Perferendis neque reiciendis consequuntur vel quaerat.</p>
+                                <a href="#" class="section-btn">Discover More</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------Portfolio Section------>
+        <section id="Portfolio" class="Portfolio">
+            <div class="container">
+                <div class="row">
+                    <h1>Our Portfolio</h1>
+                </div>
+                <ul id="portfolio-filters" class="d-flex justify-content-center align-items-center">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-wedding">Wedding</li>
+                    <li data-filter=".filter-ceremony">Ceremony</li>
+                    <li data-filter=".filter-sangith&haldi">Sangith&Haldi</li>
+                </ul>
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                        <div class="portfolio-img">
+                            <img class="img-fluid" src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2020/11/Inside-image-Wedding-Photographers6.jpg" alt=""/>
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Wedding Planning 1</h4>
+                            <p>Wedding Planning 1</p>
+                            <a href="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2020/11/Inside-image-Wedding-Photographers6.jpg" 
+                            data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Wedding Planning 1">
+                            <i class="fa-solid fa-plus" style="color: #030507;"></i></a>
+                            <a href="#" class="details-link" title="More Details"><i class="fa-regular fa-link-simple" style="color: #020203;"></i></a>
+                        </div>
+                    </div>
+                    <!---Map the remaining data into the portfolio card-->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-ceremony">
+                        <div class="portfolio-img">
+                            <img class="img-fluid" src="https://media.istockphoto.com/id/866987706/photo/indian-wedding-hands.jpg?s=612x612&w=0&k=20&c=6L-u9qhFPv9MjDnF4UK4AqjVbDKM4_8Xad72IHhwPZE=" alt=""/>
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>ceremony planning 1</h4>
+                            <p>ceremony Planning 1</p>
+                            <a href="https://media.istockphoto.com/id/866987706/photo/indian-wedding-hands.jpg?s=612x612&w=0&k=20&c=6L-u9qhFPv9MjDnF4UK4AqjVbDKM4_8Xad72IHhwPZE=" 
+                            data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="ceremony Planning 1">
+                            <i class="fa-solid fa-plus" style="color: #030507;"></i></a>
+                            <a href="#" class="details-link" title="More Details"><i class="fa-regular fa-link-simple" style="color: #020203;"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Haldhi">
+                        <div class="portfolio-img">
+                            <img class="img-fluid" src="https://t4.ftcdn.net/jpg/02/95/12/87/360_F_295128706_K7sKtd977GKShKfVuoaJhY5Sw3YvlIbw.jpg" alt=""/>
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>Haldhi planning 1</h4>
+                            <p>Haldhi Planning 1</p>
+                            <a href="https://t4.ftcdn.net/jpg/02/95/12/87/360_F_295128706_K7sKtd977GKShKfVuoaJhY5Sw3YvlIbw.jpg" 
+                            data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Haldhi Planning 1">
+                            <i class="fa-solid fa-plus" style="color: #030507;"></i></a>
+                            <a href="#" class="details-link" title="More Details"><i class="fa-regular fa-link-simple" style="color: #020203;"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-Sangith">
+                        <div class="portfolio-img">
+                            <img class="img-fluid" src="https://www.shutterstock.com/image-photo/selective-focus-on-colorful-stage-260nw-1188900886.jpg" alt=""/>
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>sangith planning 1</h4>
+                            <p>sangith Planning 1</p>
+                            <a href="https://www.shutterstock.com/image-photo/selective-focus-on-colorful-stage-260nw-1188900886.jpg" 
+                            data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sangith Planning 1">
+                            <i class="fa-solid fa-plus" style="color: #030507;"></i></a>
+                            <a href="#" class="details-link" title="More Details"><i class="fa-regular fa-link-simple" style="color: #020203;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------Contact Section------>
+        <section id="Contact" class="Contact">
+            <div class="container">
+                <div class="row">
+                    <h1>Contact Us</h1>
+                </div>
+                <!--Insert your map here, Google map Embedment-->
+                <div>
+                    <i frame style="border:0; width:100%; height:270px" src="https://www.google.com/maps/place/Siddipet,+Telangana/@18.102132,78.8278235,14z/data=!3m1!4b1!4m6!3m5!1s0x3bcc92b2b5edb805:0x498ecfa22f1e8ce4!8m2!3d18.1017996!4d78.8519601!16zL20vMDlwY2du?entry=ttu" 
+                    frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div class="info">
+                            <div class="address">
+                                <i class="fa-solid fa-location-dot" style="color: #020203;"></i>
+                                <h4>Location:</h4>
+                                <p>Street Name,City Name, State, 123456</p>
+                            </div>
+                            <div class="email">
+                                <i class="fa-solid fa-envelope" style="color: #020203;"></i>
+                                <h4>Email:</h4>
+                                <p>info@example.com</p>
+                            </div>
+                            <div class="phone">
+                                <i class="fa-solid fa-phone" style="color: #030507;"></i>
+                                <h4>Call:</h4>
+                                <p>+1 2345 67890 66</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 mt-5 mt-lg-0">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Your Name" required />
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-mt-0">
+                                    <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Your Email" required />
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input 
+                                type="text"
+                                class="form-control"
+                                placeholder="Subject" required />
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea 
+                                class="form-control"
+                                name="message"
+                                id="message"
+                                rows="5"
+                                placeholder="Message" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="subject">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!---------Main End------->
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="./glightbox.js"></script>
+    <script src="./isotope.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</body>
+</html>

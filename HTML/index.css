@@ -1,0 +1,183 @@
+*{
+    font-family: 'Times New Roman';
+}
+body{
+    background-image: url("https://wallpapercave.com/wp/wp2581397.jpg");
+    background-size: cover;/*contain,auto*/
+    background-repeat:none;/*repeat,no-repeat,repeat-x,repeat-y*/
+    background-position: top;
+
+}
+#box{
+    height: 30px;
+    background-color: aqua;
+    color:blue;
+}
+.heading{
+    color: grey;
+    text-align: center;
+    text-transform: capitalize;
+}
+#outer{
+    font-size: 25px;
+}
+#inner{
+    font-size: 10px;
+}
+#circle{
+    height: 100px;
+    width:100px;
+    background-color: lightseagreen;
+    border-radius: 50%;
+    text-align: center;
+    color: brown;
+}
+button{
+    background-color: lightpink;
+}
+
+/*navbar*/
+#navbar{
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+#logo{
+    color: orange;
+    font-size: 25px;
+}
+button{
+    background-color: orange;
+}
+a{
+    margin-right: 200px;
+    text-align: center;
+}
+
+/*webpage layout*/
+.contentbox{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block
+}
+#content{
+    height: 400px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align:center;
+}
+
+/**background image-position*/
+#div{
+    height: 200px;
+    width:200px;
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.OmG70E1alP_TpQ-olTQy2AHaEo&pid=Api&P=0&h=180");
+    background-size: cover;
+    /*background-position: top;*/
+    color: white;
+    text-align:left;
+    position: absolute;
+    right: 0px;
+    top:50px;
+}
+
+
+/**flexbox****/
+#nav{
+    background-color: lightcoral;
+    display: flex;
+    justify-content:space-evenly;
+}
+a{
+    text-decoration: none;
+    color: black;;
+}
+li{
+    list-style-type: none;
+    /*background-color: aquamarine;*/
+}
+#flexouter{
+    height: 400px;
+    width: 400px;
+    background-color: plum;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#flexinner{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+}
+
+#viewport{
+    height: 150px;
+    width: 150px;
+    background-color: darkblue;
+    color: white;
+}
+@media (max-width:300px){
+    div{
+        background-color: aquamarine;
+    }
+}
+@media (min-width:300px) and (max-width:400px){
+    div{
+        background-color: burlywood;
+    }
+}
+@media (min-width:600px){
+    div{
+        background-color: aquamarine;
+    }
+}
+
+#head:hover{
+    height: 100px;
+    width: 150px;
+    background-color: chocolate;
+}
+button:active{
+    height:50px;
+    width: 50px;
+    background-color: gold;
+}
+#transition{
+    height: 50px;
+    width: 200px;
+    background-color: gray;
+    border:2px solid black;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s;
+}
+.rotate{
+    height: 50px;
+    width: 200px;
+    background-color: deepskyblue;
+    border:2px solid black;
+    margin: 100px;
+}
+blockquote{
+    transform: rotate(45deg);
+}
+aside{
+    transform: rotate(90deg);
+}
+article{
+    transform: translate(50px)
+}
+#span{
+    height: 50px;
+    width: 200px;
+    background-color: deepskyblue;
+    border:2px solid black;
+    margin: 200px;
+    transform: skew(30deg);
+}
+
+
